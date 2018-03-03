@@ -1,0 +1,10 @@
+<article>
+    <app-navbar [header]="'My Profile - My Playlists'" [headerIcon]="'heart'"></app-navbar>
+    <p *ngIf="!(isSignedIn$ | async)" class="well lead">
+        To view your playlists in youtube, you need to sign in.
+        <button class="btn btn-lg btn-primary" (click)="signInUser()">
+      <icon name="google"></icon> Sign In
+    </button>
+    </p>
+    <router-outlet></router-outlet>
+</article>

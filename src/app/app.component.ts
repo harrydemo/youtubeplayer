@@ -1,7 +1,7 @@
 import { Component, HostBinding, OnInit } from '@angular/core';
 
-/* harry import { Store } from '@ngrx/store';
-import { VersionCheckerService } from './core/services/version-checker.service';
+import { Store } from '@ngrx/store';
+/* harry import { VersionCheckerService } from './core/services/version-checker.service';
 import { EchoesState } from '@store/reducers';
 import { getSidebarCollapsed, getAppTheme } from '@store/app-layout'; */
 

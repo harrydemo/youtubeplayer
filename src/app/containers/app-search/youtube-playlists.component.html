@@ -1,0 +1,7 @@
+<loader [message]="'Loading Awesome Playlists Results'" [loading]="isSearching$ | async"></loader>
+<section class="videos-list">
+    <div class="list-unstyled ux-maker youtube-items-container clearfix">
+        <youtube-playlist [@fadeIn] *ngFor="let playlist of results$ | async" link="" [media]="playlist" (play)="playPlaylist(playlist)" (queue)="queueSelectedPlaylist(playlist)">
+        </youtube-playlist>
+    </div>
+</section>
