@@ -1,28 +1,10 @@
-import { Component, HostBinding, OnInit } from '@angular/core';
-
-import { Store } from '@ngrx/store';
-/* harry import { VersionCheckerService } from './core/services/version-checker.service';
-import { EchoesState } from '@store/reducers';
-import { getSidebarCollapsed, getAppTheme } from '@store/app-layout'; */
+import { Component } from '@angular/core';
 
 @Component({
-  selector: 'body',
+  selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.css']
 })
-
-export class AppComponent implements OnInit {
- // harry sidebarCollapsed$ = this.store.select(getSidebarCollapsed);
-  // harry theme$ = this.store.select(getAppTheme);
-
-  @HostBinding('class')
-  style = 'arctic';
-
- /* harry  constructor(private store: Store<EchoesState>, private versionCheckerService: VersionCheckerService) {
-    versionCheckerService.start();
-  } */
-
-  ngOnInit() {
-    // harry this.theme$.subscribe(theme => this.style = theme);
-  }
+export class AppComponent {
+  title = 'app';
 }

@@ -1,35 +1,16 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { APP_CONTAINER_MODULES } from './containers';
-
-/* harry import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { FormsModule } from '@angular/forms';
-import { HttpClientModule, HttpClientJsonpModule } from '@angular/common/http';
-import { RouterModule } from '@angular/router';
-import { CoreModule } from './core';
-import { SharedModule } from '@shared/index';
-import { APP_CORE_MODULES } from './core/components';
-import { ROUTES } from './app.routes'; */
 
 import { AppComponent } from './app.component';
 
+
 @NgModule({
   declarations: [
-    AppComponent,
+    AppComponent
   ],
   imports: [
-    BrowserModule,
-    /* harry FormsModule,
-    HttpClientModule,
-    HttpClientJsonpModule,
-    RouterModule.forRoot(ROUTES, { useHash: true }),
-    BrowserAnimationsModule,
-
-    CoreModule,
-    SharedModule,
-    ...APP_CORE_MODULES,*/
-    ...APP_CONTAINER_MODULES
+    BrowserModule
   ],
   providers: [],
   bootstrap: [AppComponent]

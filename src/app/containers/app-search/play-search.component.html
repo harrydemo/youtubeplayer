@@ -1,9 +1,0 @@
-<form class="navbar-form form-search" id="media-explorer" [formGroup]="searchForm" (ngSubmit)="onSearch()">
-    <div class="form-group clearfix">
-        <input placeholder="Find My Echoes..." id="media-search" #mediaSearch ngxTypeahead [taUrl]="'//suggestqueries.google.com/complete/search'" [taParams]="params" (taSelected)="handleSelectSuggestion($event)" type="search" class="form-control" autocomplete="off"
-            name="mediaSearch" formControlName="searchInput">
-        <button class="btn btn-transparent btn-submit" type="submit" tooltip="search with echoes">
-    <icon name="search"></icon>
-  </button>
-    </div>
-</form>

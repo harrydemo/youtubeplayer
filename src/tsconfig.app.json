@@ -1,50 +1,13 @@
 {
-    "extends": "../tsconfig.json",
-    "compilerOptions": {
-        "outDir": "../out-tsc/app",
-        "baseUrl": "./",
-        "module": "es2017",
-        "types": []
-    },
-    "exclude": [
-        "test.ts",
-        "**/*.spec.ts"
-    ],
-    "lib": [
-        "es2017",
-        "dom"
-    ],
-    "paths": {
-        "~/*": [
-            "src/*"
-        ],
-        "@utils/*": [
-            "src/app/shared/utils/*"
-        ],
-        "@shared/*": [
-            "./src/app/shared/*"
-        ],
-        "@animations/*": [
-            "./src/app/shared/animations/*"
-        ],
-        "@core/*": [
-            "./src/app/core/*"
-        ],
-        "@api/*": [
-            "./src/app/core/api/*"
-        ],
-        "@resolvers/*": [
-            "./src/app/core/resolvers/*"
-        ],
-        "@store/*": [
-            "./src/app/core/store/*"
-        ],
-        "@mocks/*": [
-            "./tests/mocks/*"
-        ],
-        "@env/*": [
-            "./src/environments/*"
-        ]
-    }
-}
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../out-tsc/app",
+    "baseUrl": "./",
+    "module": "es2015",
+    "types": []
+  },
+  "exclude": [
+    "test.ts",
+    "**/*.spec.ts"
+  ]
 }
