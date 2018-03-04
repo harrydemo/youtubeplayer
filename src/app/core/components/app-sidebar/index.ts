@@ -1,0 +1,23 @@
+import { NgModule } from '@angular/core';
+
+
+import { AppSidebarComponent } from './app-sidebar.component';
+import { AppBrandModule } from '../app-brand';
+import { AppNavigatorModule } from '../app-navigator';
+import { AppSidebarProxy } from './app-sidebar.proxy';
+
+/* harry import { SharedModule } from '@shared/index';
+import { NowPlayingModule } from '../now-playing'; */
+
+@NgModule({
+  imports: [
+    AppBrandModule,
+    AppNavigatorModule,
+/*  harry   SharedModule,
+    NowPlayingModule */
+  ],
+  exports: [AppSidebarComponent],
+  declarations: [AppSidebarComponent],
+  providers: [AppSidebarProxy],
+})
+export class AppSidebarModule { }
