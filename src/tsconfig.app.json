@@ -1,13 +1,57 @@
 {
-  "extends": "../tsconfig.json",
-  "compilerOptions": {
-    "outDir": "../out-tsc/app",
-    "baseUrl": "./",
-    "module": "es2015",
-    "types": []
-  },
-  "exclude": [
-    "test.ts",
-    "**/*.spec.ts"
-  ]
+    "extends": "../tsconfig.json",
+    "compilerOptions": {
+        "outDir": "../out-tsc/app",
+        "baseUrl": "./",
+        "module": "es2015",
+        "types": []
+    },
+    "exclude": [
+        "test.ts",
+        "**/*.spec.ts"
+    ],
+    "baseUrl": "",
+    "paths": {
+        "~/*": [
+            "/*"
+        ],
+        "@utils/*": [
+            "app/shared/utils/*"
+        ],
+        "@shared/*": [
+            "app/shared/*"
+        ],
+        "@animations/*": [
+            "app/shared/animations/*"
+        ],
+        "@core/*": [
+            "app/core/*"
+        ],
+        "@api/*": [
+            "app/core/api/*"
+        ],
+        "@resolvers/*": [
+            "app/core/resolvers/*"
+        ],
+        "@store/*": [
+            "app/core/store/*"
+        ],
+        "@mocks/*": [
+            "../tests/mocks/*"
+        ],
+        "@env/*": [
+            "environments/*"
+        ]
+    },
+    "types": [
+        "gapi",
+        "gapi.youtube",
+        "gapi.auth2",
+        "youtube",
+        "jasmine",
+        "node"
+    ],
+    "angularCompilerOptions": {
+        "preserveWhitespaces": false
+    }
 }

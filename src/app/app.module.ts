@@ -6,14 +6,12 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule, HttpClientJsonpModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
-
 import { CoreModule } from './core';
 import { SharedModule } from '@shared/index';
-
-import { APP_CORE_MODULES } from './core/components';
 import { APP_CONTAINER_MODULES } from './containers';
 import { ROUTES } from './app.routes'; */
 
+import { APP_CORE_MODULES } from './core/components';
 import { AppComponent } from './app.component';
 
 

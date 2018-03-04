@@ -60,7 +60,7 @@ export class PlayerControlsComponent {
   ];
 
   handlePlay() {
-    this.play.emit(this.media);
+    // harry this.play.emit(this.media);
   }
 
   handlePrevious() {
