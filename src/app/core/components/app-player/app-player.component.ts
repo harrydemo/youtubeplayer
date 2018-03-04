@@ -57,9 +57,9 @@ export class AppPlayerComponent implements OnInit {
     // harry this.appPlayerApi.changePlayerState(event);
   }
 
-  playVideo(media: GoogleApiYouTubeVideoResource) {
+  // harry playVideo(media: GoogleApiYouTubeVideoResource) {
     // harry this.appPlayerApi.playVideo(media);
-  }
+  // harry }
 
   pauseVideo() {
     // harry this.appPlayerApi.pauseVideo();

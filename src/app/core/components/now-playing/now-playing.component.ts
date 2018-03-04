@@ -28,10 +28,10 @@ export class NowPlayingComponent implements OnInit {
    // harry this.nowPlaylist$ = this.nowPlaylistService.playlist$;
   }
 
-  selectVideo(media: GoogleApiYouTubeVideoResource) {
+  // harry selectVideo(media: GoogleApiYouTubeVideoResource) {
   /* harry  this.store.dispatch(new AppPlayer.PlayVideo(media));
     this.nowPlaylistService.updateIndexByMedia(media.id); */
-  }
+  // harry }
 
   sortVideo() { }
 
@@ -55,8 +55,8 @@ export class NowPlayingComponent implements OnInit {
     // harry this.nowPlaylistComponent.scrollToActiveTrack();
   }
 
-  selectTrackInVideo(trackEvent: { time: string; media: GoogleApiYouTubeVideoResource }) {
-   /* harry  this.store.dispatch(new AppPlayer.PlayVideo(trackEvent.media));
-    this.nowPlaylistService.seekToTrack(trackEvent); */
-  }
+  /* harry selectTrackInVideo(trackEvent: { time: string; media: GoogleApiYouTubeVideoResource }) {
+    this.store.dispatch(new AppPlayer.PlayVideo(trackEvent.media));
+    this.nowPlaylistService.seekToTrack(trackEvent);
+  } */
 }

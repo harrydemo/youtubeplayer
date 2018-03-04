@@ -16,7 +16,7 @@ import {
 })
 export class MediaInfoComponent implements OnInit {
   @Input() player: any = {};
-  @Input() minimized: GoogleApiYouTubeVideoResource;
+  // harry @Input() minimized: GoogleApiYouTubeVideoResource;
   @Output() thumbClick = new EventEmitter();
 
   constructor() {}
@@ -34,7 +34,7 @@ export class MediaInfoComponent implements OnInit {
     this.thumbClick.next();
   }
 
-  get _minimized() {
-    return !this.minimized.hasOwnProperty('id');
-  }
+  // harry get _minimized() {
+    // harry return !this.minimized.hasOwnProperty('id');
+  // harry }
 }

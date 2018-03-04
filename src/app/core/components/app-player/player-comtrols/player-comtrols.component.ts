@@ -13,14 +13,14 @@ import {
   styleUrls: ['./player-comtrols.component.scss']
 })
 export class PlayerControlsComponent {
-  @Input() media: GoogleApiYouTubeVideoResource;
+  // harry @Input() media: GoogleApiYouTubeVideoResource;
   @HostBinding('class.yt-repeat-on')
   @Input()
   isRepeat = false;
   @HostBinding('class.yt-playing')
   @Input()
   playing = false;
-  @Output() play = new EventEmitter<GoogleApiYouTubeVideoResource>();
+  // harry @Output() play = new EventEmitter<GoogleApiYouTubeVideoResource>();
   @Output() pause = new EventEmitter();
   @Output() previous = new EventEmitter();
   @Output() next = new EventEmitter();
