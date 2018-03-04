@@ -3,7 +3,7 @@ import 'rxjs/add/operator/switchMapTo';
 import 'rxjs/add/operator/switchMap';
 // import 'rxjs/add/observable/of';
 
-import { Effect, Actions, toPayload } from '@ngrx/effects';
+// harry import { Effect, Actions, toPayload } from '@ngrx/effects';
 /* harry import { of } from 'rxjs/observable/of';
 import { defer } from 'rxjs/observable/defer';
 
@@ -16,7 +16,7 @@ import { Authorization } from '@core/services/authorization.service'; */
 @Injectable()
 export class UserProfileEffects {
   constructor(
-    private actions$: Actions,
+   // harry  private actions$: Actions,
 /*  harry   private userProfileActions: UserProfileActions,
     private userProfile: UserProfile,
     private auth: Authorization */

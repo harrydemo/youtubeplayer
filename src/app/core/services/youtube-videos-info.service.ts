@@ -3,9 +3,9 @@ import { YoutubeApiService } from './youtube-api.service';
 import { Authorization } from './authorization.service';
 // harry import { HttpClient, HttpParams, HttpHeaders } from '@angular/common/http';
 
-interface IYoutubeVideosInfo {
-  items: GoogleApiYouTubeVideoResource[];
-}
+// harry interface IYoutubeVideosInfo {
+  // harry items: GoogleApiYouTubeVideoResource[];
+// harry }
 @Injectable()
 export class YoutubeVideosInfo {
   public api: YoutubeApiService;

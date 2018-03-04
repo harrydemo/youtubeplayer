@@ -8,7 +8,7 @@ export class MediaParserService {
 
   constructor() { }
 
-  extractTracks(media: GoogleApiYouTubeVideoResource) {
+/* harry  extractTracks(media: GoogleApiYouTubeVideoResource) {
     // const re = /(([0-9]{0,1}[0-9]):([0-9][0-9]){0,1}:{0,1}([0-9][0-9]){0,1}\s*)([\w\s/]*[^ 0-9:/\n\b])/;
     const LINE_WITH_TRACKre = /([a-zA-Z \S\d]){0,}(\d{1,2}:\d{2}:{0,1}\d{0,2})+([a-zA-Z \S]){0,}/;
     const hasTracksRegexp = new RegExp(LINE_WITH_TRACKre, 'gmi');
@@ -18,7 +18,7 @@ export class MediaParserService {
       tracks.unshift('00:00');
     }
     return tracks;
-  }
+  } */
 
   extractTime(track: string) {
     const HH_MM_SSre = this.HH_MM_SSre;

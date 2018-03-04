@@ -21,9 +21,9 @@ export class NowPlaylistService {
     // harry return this.youtubeVideosInfo.api.list(mediaId).map(items => items[0]);
   }
 
-  queueVideos(medias: GoogleApiYouTubeVideoResource[]) {
+  // harry queueVideos(medias: GoogleApiYouTubeVideoResource[]) {
     // harry this.store.dispatch(new NowPlaylist.QueueVideos(medias));
-  }
+  // harry }
 
   removeVideo(media) {
     // harry this.store.dispatch(new NowPlaylist.RemoveVideo(media));

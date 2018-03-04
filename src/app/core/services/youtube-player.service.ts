@@ -5,7 +5,7 @@ import * as AppPlayer from '@store/app-player'; */
 
 @Injectable()
 export class YoutubePlayerService {
-  public player: YT.Player;
+  // harry public player: YT.Player;
 
   constructor(
     // harry private store: Store<EchoesState>,
@@ -14,28 +14,28 @@ export class YoutubePlayerService {
   ) { }
 
   setupPlayer(player) {
-    this.player = player;
+    // harry this.player = player;
   }
 
   play() {
-    this.zone.runOutsideAngular(() => this.player.playVideo());
+    // harry this.zone.runOutsideAngular(() => this.player.playVideo());
   }
 
   pause() {
-    this.zone.runOutsideAngular(() => this.player.pauseVideo());
+    // harry this.zone.runOutsideAngular(() => this.player.pauseVideo());
   }
 
-  playVideo(media: GoogleApiYouTubeVideoResource, seconds?: number) {
+/* harry  playVideo(media: GoogleApiYouTubeVideoResource, seconds?: number) {
     const id = media.id;
     const isLoaded = this.player.getVideoUrl().includes(id);
     if (!isLoaded) {
       this.zone.runOutsideAngular(() => this.player.loadVideoById(id, seconds || undefined));
     }
     this.play();
-  }
+  } */
 
   seekTo(seconds: number) {
-    this.zone.runOutsideAngular(() => this.player.seekTo(seconds, true));
+    // harry this.zone.runOutsideAngular(() => this.player.seekTo(seconds, true));
   }
 
   // Not in use
@@ -44,21 +44,21 @@ export class YoutubePlayerService {
     // let autoNext = false;
     // play the next song if its not the end of the playlist
     // should add a "repeat" feature
-    if (state === YT.PlayerState.ENDED) {
+    // harry if (state === YT.PlayerState.ENDED) {
       // this.listeners.ended.forEach(callback => callback(state));
-    }
+    // harry }
 
-    if (state === YT.PlayerState.PAUSED) {
+    // harry if (state === YT.PlayerState.PAUSED) {
       // service.playerState = YT.PlayerState.PAUSED;
-    }
-    if (state === YT.PlayerState.PLAYING) {
+    // harry }
+    // harry if (state === YT.PlayerState.PLAYING) {
       // service.playerState = YT.PlayerState.PLAYING;
-    }
+    // harry }
   }
 
   setSize(height, width) {
     this.zone.runOutsideAngular(() => {
-      this.player.setSize(width, height);
+      // harry this.player.setSize(width, height);
     });
   }
 }

@@ -5,7 +5,7 @@ import { ActivatedRouteSnapshot, Resolve } from '@angular/router'; */
 
 
 @Injectable()
-export class PlaylistVideosResolver implements Resolve<any> {
+export class PlaylistVideosResolver /* harry implements Resolve<any> */ {
   constructor(
     // harry private userProfile: UserProfile,
   ) { }

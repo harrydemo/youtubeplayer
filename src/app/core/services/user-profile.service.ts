@@ -1,7 +1,8 @@
+import { Injectable, NgZone } from '@angular/core';
 import { Subject } from 'rxjs/Subject';
 import { Subscription } from 'rxjs/Subscription';
 
-import { Injectable, NgZone } from '@angular/core';
+
 
 import 'rxjs/add/operator/switchMap';
 import 'rxjs/add/operator/buffer';
@@ -136,8 +137,8 @@ export class UserProfile {
     return _profile;
   } */
 
-  fetchMetadata(items: GoogleApiYouTubeVideoResource[]) {
+  /* harry fetchMetadata(items: GoogleApiYouTubeVideoResource[]) {
     const videoIds = items.map(video => video.id).join(',');
     return this.youtubeVideosInfo.api.list(videoIds);
-  }
+  } */
 }
