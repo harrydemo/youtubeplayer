@@ -28,7 +28,7 @@
         "@angular/animations": "^5.2.7",
         "@angular/cli": "~1.7.2",
         "@angular/compiler-cli": "^5.2.0",
-        "@angular/core": "^5.2.7",
+        "@angular/core": "^11.0.5",
         "@angular/language-service": "^5.2.0",
         "@angular/router": "^5.2.7",
         "@ngrx/effects": "^5.1.0",
